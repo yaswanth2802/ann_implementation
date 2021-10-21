@@ -1,30 +1,24 @@
-import setuptools
+from setuptools import setup
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
-
-PROJECT_NAME ="ann implementation"
-USER_NAME ="yaswanth2802"
-
-setuptools.setup(
-    name=f"{PROJECT_NAME}-{USER_NAME}",
+setup(
+    name="src",
     version="0.0.1",
-    author=USER_NAME,
-    author_email="cyk12@iitbbs.ac.in",
-    description="its a basic implementation of ann",
+    author="yaswanth2802",
+    description="A small package for ANN Implementation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url=f"https://github.com/{USER_NAME}/{PROJECT_NAME}",
-    project_urls={
-        "Bug Tracker": "https://github.com/{USER_NAME}/{PROJECT_NAME}/issues",
-    },
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GNU GENERAL PUBLIC License",
-        "Operating System :: OS Independent",
-    ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    url="https://github.com/yaswanth2802/ann_implementation",
+    author_email="cyk12@iitbbs.ac.in",
+    packages=["src"],
     python_requires=">=3.7",
-)
+    install_requires=[
+        "tensorflow",
+        "matplotlib",
+        "seaborn",
+        "numpy",
+        "pandas"
+                      ]  
+    )
