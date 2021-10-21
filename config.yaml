@@ -1,6 +1,6 @@
 #contains all the paramaters which are commonmly used in the usecase
 params:
-  epochs: 1
+  epochs: 30
   batch_size: 32
   num_classes: 10
   loss_function: sparse_categorical_crossentropy
