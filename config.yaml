@@ -1,0 +1,27 @@
+#contains all the paramaters which are commonmly used in the usecase
+
+params:
+  epochs : 30
+  batch_size : 32
+  num_classes : 10
+  input_shape : [28,28]
+  loss_function : sparse_categorical_crossentropy
+  metrices : accuracy
+  optimizer : SGD
+  validation_datasize : 5000
+
+
+artifacts:
+  artifacts_dir : artifacts
+  model_dir : model
+  plots_dir : plots
+  cheakpoint_dir : cheakpoints
+
+logs:
+  logs_dir : logs_dir
+  general_logs : general_logs
+  tensorboard_logs : tensorboard_logs
+
+
+
+   
